@@ -8,6 +8,7 @@
 
 function collectValues() {
  var enteredIn = [];
+ var valEntered = document.getElementById
  enteredIn.push(value);
  console.log(enteredIn);
 };
