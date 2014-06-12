@@ -7,9 +7,10 @@
 // C once clears the current value array, C twice clears all the arrays
 
 function collectValues() {
- 
-
+ var enteredIn = [];
+ enteredIn.push(value);
+ console.log(enteredIn);
 };
 
-var clickButton = getElementById('num');
-clickButton.addEventListener("click", collectValues, false);
+var key = document.getElementById('keys');
+key.addEventListener("click", collectValues, false);
