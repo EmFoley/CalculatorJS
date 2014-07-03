@@ -1,13 +1,13 @@
 
 var collectValues = function() {
    var enteredIn = [];
-   var valEntered = this.val;
+   var valEntered = this.value;
    enteredIn.push(valEntered);
    console.log(valEntered);
 };
 
-var keys = document.getElementById('keys');
-var buttons = keys.childNodes;
+
+var buttons = document.getElementsByClassName('button');
 
 for (var i=0; i < buttons.length; i++) {
   var button = buttons[i];
