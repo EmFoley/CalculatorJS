@@ -6,7 +6,7 @@
   <title>Smashing HTML5!</title>
    
   <link rel="stylesheet" href="calculator.css" type="text/css" />
-  <script type="text/javascript" src="calculator.js"></script>
+  
   </head>
   <body>
     <div class="calculator">
@@ -16,20 +16,74 @@
             <table id="keys">
               <tr>
                 <td>
-                  <button class="button">7</button>
+                  <input type= "button" class="button on" value="On">
                 </td>
                 <td>
-                  <button class="button">8</button>
+                  <input type= "button" class="button off" value="Off">
                 </td>
                 <td>
-                  <button class="button">9</button>
+                  <input type= "button" class="button clear" value="C">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type= "button" class="button num" value="7">
                 </td>
                 <td>
-                  <button class="button">+</button>
+                  <input type= "button" class="button num" value="8">
+                </td>
+                <td>
+                  <input type= "button" class="button num" value="9">
+                </td>
+                <td>
+                  <input type= "button" class="button op" id="minus" value="-">
+                </td>
+              </tr>
+              <tr>
+               <td>
+                 <input type= "button" class="button num" value="4">
+               </td>
+               <td>
+                 <input type= "button" class="button num" value="5">
+               </td>
+               <td>
+                 <input type= "button" class="button num" value="6">
+               </td>
+               <td>
+                 <input type= "button" class="button op" id="plus" value="+">
+               </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type= "button" class="button num" value="1">
+                </td>
+                <td>
+                  <input type= "button" class="button num" value="2">
+                </td>
+                <td>
+                  <input type= "button" class="button num" value="3">
+                </td>
+                <td>
+                  <input type= "button" class="button op" id="times" value="x">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type= "button" class="button num" value="0">
+                </td>
+                <td>
+                  <input type= "button" class="button decimal" value=".">
+                </td>
+                <td>
+                  <input type= "button" class="button equals" value="=">
+                </td>
+                <td>
+                  <input type= "button" class="button op" value="÷">
                 </td>
               </tr>
             </table>
           </div>
     </div>
   <body>
+    <script type="text/javascript" src="calculator.js"></script>
 </html>
