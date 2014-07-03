@@ -1,9 +1,10 @@
 
-var collectValues = function() {
-   var enteredIn = [];
+var enteredIn = [];
+
+var collectValues = function() {   
    var valEntered = this.value;
    enteredIn.push(valEntered);
-   console.log(valEntered);
+   console.log(enteredIn);
 };
 
 
