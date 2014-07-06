@@ -31,6 +31,7 @@ var plus = document.getElementById("plus")
 
 var sendToEval = function() {
   evalArray.push(result.innerHTML)
+  return evalArray
 };
 
 
