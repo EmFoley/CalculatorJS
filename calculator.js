@@ -1,14 +1,18 @@
 
-var enteredIn = [];
+;var enteredIn = [];
 var collectValues = function() {   
    var valEntered = this.value;
    enteredIn.push(valEntered);
-   evalArray(enteredIn);
+   evalArray(enteredIn.join(''));
 };
 
 var result = document.getElementById("result-view");
 var evalArray = function(numsEntered) {
   result.innerHTML = numsEntered;
+};
+
+var evaluateNow = function() {
+
 };
 
 var buttons = document.getElementsByClassName('button');
