@@ -1,5 +1,6 @@
 
 ;var enteredIn = [];
+var evalArray = [];
 var collectValues = function() {   
    var valEntered = this.value;
    enteredIn.push(valEntered);
@@ -13,13 +14,26 @@ var showArray = function(numsEntered) {
 
 var equals = document.getElementsByClassName("equals")
 var equals = function() {
-  equals.addEventListener("click", evaluateNow, false)
+  equals.addEventListener("click", finalAnswer, false)
 };
 
-var evaluateNow = function() {
-  if evalArray
-   showArray(evalArray);
+var finalAnswer = function() {
+  if (evalArray != null) {
+   showArray(evalArray)
+ }
+  else {
+    alert("You have to enter some numbers!")
+  }
 };
+
+var plus = document.getElementById("plus")
+  plus.addEventListener("click", sendToEval, false);
+
+var sendToEval = function() {
+  evalArray.push(result.innerHTML)
+};
+
+
 
 var buttons = document.getElementsByClassName('button');
   for (var i=0; i < buttons.length; i++) {
