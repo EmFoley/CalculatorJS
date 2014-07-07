@@ -1,10 +1,17 @@
 
 ;var enteredIn = [];
 var evalArray = [];
-var collectValues = function() {   
-   var valEntered = this.value;
-   enteredIn.push(valEntered);
-   showArray(enteredIn.join(''));
+
+var collectValues = function() { 
+  if (this.className = "button op") {
+    debugger
+    console.log("op");
+   }
+   else {
+    var valEntered = this.value;
+    enteredIn.push(valEntered);
+    showArray(enteredIn.join(''));
+   };
 };
 
 var result = document.getElementById("result-view");
@@ -27,11 +34,13 @@ var finalAnswer = function() {
 };
 
 var plus = document.getElementById("plus")
+var addUp = function() {
   plus.addEventListener("click", sendToEval, false);
+};
 
 var sendToEval = function() {
   evalArray.push(result.innerHTML)
-  return evalArray
+  return evalArray;
 };
 
 
