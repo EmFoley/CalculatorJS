@@ -3,10 +3,8 @@
 var evalArray = [];
 
 var collectValues = function() { 
-  if (this.className = "button op") {
-    console.log("op");
-   }
-   else {
+  if (this.className = "button num") {
+    debugger
     var valEntered = this.value;
     enteredIn.push(valEntered);
     showArray(enteredIn.join(''));
