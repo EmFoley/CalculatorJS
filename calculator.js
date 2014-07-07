@@ -4,7 +4,6 @@ var evalArray = [];
 
 var collectValues = function() { 
   if (this.className = "button op") {
-    debugger
     console.log("op");
    }
    else {
